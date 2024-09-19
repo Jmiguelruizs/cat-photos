@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    text-transform: capitalize;
+    font-family: tahoma;
+    text-align: center;
+    background-color: #0a0a23;
+    color:white;
+    padding: 32px;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    max-width: 1400px;
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery::after{
+    content: "";
+    width: 350px;
+}
